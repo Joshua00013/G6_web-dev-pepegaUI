@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <div class="category"><h1>Category</h1></div>
+    <div class="question">
+        <p class="question_label">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at accusantium itaque quidem alias fuga placeat iusto a tenetur. Impedit dignissimos nulla laborum! Ab, sequi nam autem molestiae vitae facere.</p>
+    </div>
+    <!-- POST method is used for sensitive data -->
+    <form class="quiz" method="POST" id="quizForm" onsubmit="return false;">
+        <div class="buttons_container">
+            <div class="row">
+                <input type="radio" name="quizRadio" id="choice1" value="1">
+                <label for="choice1" id="label1">A. Choice 1</label>
+
+                <input type="radio" name="quizRadio" id="choice2" value="2">
+                <label for="choice2"id="label2" >B. Choice 2</label>
+            </div>
+        </div>
+
+        <div class="buttons_container">
+            <div class="row">
+                <input type="radio" name="quizRadio" id="choice3" value="3">
+                <label for="choice3" id="label3">C. Choice 3</label>
+
+                <input type="radio" name="quizRadio" id="choice4" value="4">
+                <label for="choice4" id="label4">D. Choice 4</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class=submit_container>
+            <input class="submit_btn" type="submit" value="Next">
+        </div>
+        
+    </form>
+
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>

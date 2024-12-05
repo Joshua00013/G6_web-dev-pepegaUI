@@ -1,0 +1,12 @@
+[
+    {
+        "question":"What is your favorite food",
+        "options":["Pizza","Graham","Burger","Hotdogs"],
+        "correct": 0
+    },
+    {
+        "question":"What is your favorite food",
+        "options":["Pizza","Graham","Burger","Hotdogs"],
+        "correct": 0
+    }
+]

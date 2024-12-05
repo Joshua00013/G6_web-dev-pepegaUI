@@ -1,0 +1,63 @@
+body{
+    background-image: url("https://s3-alpha-sig.figma.com/img/96a5/49a7/dec2eede231553742fee4597f159fb88?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bKqfOjBvlFIJ513hqNMLZhGMGOfo2M3DE3xwDXrE~36BXUinNrnxFimUAvyghTAgiEPoEtwnsknfL0WcFcqe78nHfGXwgWoe-OSSBiP~q3n71MEsTz00sDmFlUC4GLfD9oSZZhonPEEZbh2vY~-zYb1ikn2bhhqsvvb~b0u~HO1RvEFlXo1jo5ot8PpIF0pi8~tMPwyGbHxkzQVbbUN~gTCR3QyV1ZBt0~cMj8OPgjxF3hc7nyxeCLgJlg~5OfPiBFqW7BdIBWa4ccyXAoPFO3dgEjC8XwnhoRGRSuPfr89-AH74suL9UQX5EKN2AEMU4fRxOZ00jtB5uozO567OzQ__");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    height: 100vh;
+    background-position: center;
+}
+
+.buttons_container ,.submit_container,.category,.question{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons_container .row{
+    display:flex;
+    justify-content: space-between;
+    gap:50px;
+}
+input[type="radio"]{
+    display:none;
+}
+label,.submit_btn{
+    background-color: rgb(59, 59, 77);
+    color:white;
+    position:relative;
+    font-family: sans-serif;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 30px;
+    margin:20px;
+    padding-inline:50px;
+    padding-block: 10px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+.category{
+    font-family: sans-serif;
+    font-size: 25px;
+    color:white;
+}
+.question{
+    background-color: rgba(0, 0, 0, 0.589);
+    padding-inline: 50px;
+}
+.question_label{
+    font-size: 30px;
+    font-family: sans-serif;
+    color:white;
+}
+
+label:hover, .submit_btn:hover{
+    cursor: pointer;
+    background-color: rgb(35, 35, 37);
+    color:rgb(118, 173, 255);
+    
+}
+input[type="radio"]:checked+label{
+    background-color: rgb(35, 35, 37);
+    color:rgb(82, 215, 255);
+}

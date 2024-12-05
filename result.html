@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="styles/fstyle.css" />
+  </head>
+  <body>
+    <div class="final-score-container">
+      <div class="final-score">Final Score: <span id="scoreDisplay"> </span></div>
+    </div>
+
+    <div class="correct-answers-container">Correct Answers
+    </div>
+    <br>
+
+      <div class="sections">
+        <div class="section">
+          <h3>History of Computing</h3>
+          <ul>
+            <li>
+              <span>1.</span> Lady Ada Lovelace
+              <br />
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>2.</span> 1890
+              <br />
+              <span>Your Answer:</span>
+            </li>
+            <li>
+              <span>3.</span> Charles Babbage
+              <br />
+              <span>Your Answer:</span>
+            </li>
+            <li>
+              <span>4.</span> Pascaline
+              <br />
+              <span>Your Answer:</span>
+            </li>
+            <li>
+              <span>5.</span> Boolean Algebra
+              <br />
+              <span>Your Answer:</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Cyber Attacks & Malwares</h3>
+          <ul>
+            <li>
+              <span>6.</span> Spoofing
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>7.</span> Worm
+              <br />
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>8.</span> Adware
+              <br />
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>9.</span> Spyware 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>10.</span> Denial-of-Service Attacks 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Programming</h3>
+          <ul>
+            <li>
+              <span>11.</span> Reserved Words 
+              <br>
+              <span>Your Answer:</span> 
+              
+            </li>
+            <li>
+              <span>12.</span> Object-oriented PL 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>13.</span> Python  
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>14.</span> Data Types 
+              <br>
+              <span>Your Answer:</span>
+            </li>
+            <li>
+              <span>15.</span> Procedural PL 
+              <br>
+              <span>Your Answer:</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Networking</h3>
+          <ul>
+            <li><span>16.</span> 7  
+                <br>
+                <span>Your Answer:</span> </li>
+            <li>
+              <span>17.</span> Star Topology 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>18.</span> SSH (Secure Shell) 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>19.</span> Access Point 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+            <li>
+              <span>20.</span> Application Layer 
+              <br>
+              <span>Your Answer:</span> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      const score = sessionStorage.getItem('quizScore') || 0;
+      const userAnswers = JSON.parse(sessionStorage.getItem('userAnswers')) || [];
+
+      document.getElementById('scoreDisplay').textContent = score;
+
+      const answerSpans = document.querySelectorAll('.section ul li span:nth-of-type(2)');
+
+      userAnswers.forEach((answer, index) => {
+        if (answerSpans[index]) {
+          answerSpans[index].textContent = `Your Answer: ${answer}`;
+        }
+      });
+    </script>
+
+    <a href="C:\Users\Sofia Beron\Desktop\College\College\3rd Year\1st Sem\WebDEV\MIDTERM_GROUP\d2 nag eedit v2.0\v3.0Web-Based-Quiz-Application-main\index.html" class="retake-button">RETAKE</a>
+  </body>
+</html>
