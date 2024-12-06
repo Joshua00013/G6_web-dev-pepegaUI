@@ -14,33 +14,36 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(255, 255, 255, 0.685);
     width: 100%;
     font-family: sans-serif;
-    color: white;
+    color: rgb(25, 0, 255);
+    -webkit-text-stroke: 1px white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 12px;
     flex-direction: column;
 }
 .title p{
+    -webkit-text-stroke: 0.5px white;
     margin-top: 0px;
-    font-size: 13px;
-    font-weight: 1;
-    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 .title h1{
     margin-bottom: 0px;
+    margin-top: 15px;
 }
 .button_container button{
-    font-size: 25px;
+    font-size: 35px;
     font-family: sans-serif;
-    color: white;
-    background-color: rgb(44, 44, 61);
+    color: rgb(68, 0, 255);
+    background-color: rgb(255, 255, 255);
     border: 2px rgb(255, 255, 255),solid;
     padding-inline: 40px;
     padding-block:8px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-weight: bold;
     letter-spacing: 3px;
     transition: background-color 0.3s;
